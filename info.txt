@@ -1,0 +1,10 @@
+Team Name: 
+Team Members: McKenzie Hafkemeyer, Gregoire Albizzati, Ben Albritton
+GitHub: https://github.com/CSC481/TicTacToe
+JIRA:
+Language: Python
+Tools/Frameworks: 
+IDEs/Editors:
+Unit Testing:
+Dependencies:
+Special Instructions:
