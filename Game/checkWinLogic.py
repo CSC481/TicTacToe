@@ -7,22 +7,22 @@ class WinLogic:
 		 
 	def ClearMatrix(self):
 		if WinLogic.debug:
-			print "Clearing Matrix"
+			print("Clearing Matrix")
 		WinLogic.matrix = [[0 for x in range(3)] for y in range(3)]
 	
 	def SetPlayer(self, player):
 		if WinLogic.debug:
-			print "Setting player as: " + player
+			print ("Setting player as: " + player)
 		WinLogic.player = player
 		
 	def GetPlayer(self):
 		if WinLogic.debug:
-			print "Returning: " + WinLogic.player
+			print ("Returning: " + WinLogic.player)
 		return WinLogic.player
 	
 	def SetGrid(self, val, w, h):
 		if WinLogic.debug:
-			print "Setting grid..."
+			print ("Setting grid...")
 		WinLogic.matrix[w][h] = val
 		
 	def GetGrid(self, w, h):
@@ -30,7 +30,7 @@ class WinLogic:
 		
 	def hasPlayerWon(self, player):
 		if WinLogic.debug:
-			print "Checking for winner"
+			print ("Checking for winner")
 		if((WinLogic.matrix[0] [0] == WinLogic.player)and(WinLogic.matrix[1] [0] == WinLogic.player)and(WinLogic.matrix[2] [0] == WinLogic.player)):
 			return True
 		elif((WinLogic.matrix[0] [1] == WinLogic.player)and(WinLogic.matrix[1] [1] == WinLogic.player)and(WinLogic.matrix[2] [1] == WinLogic.player)):
@@ -50,7 +50,7 @@ class WinLogic:
 		
 		else:
 			if WinLogic.debug:
-				print "No Player has won"
+				print ("No Player has won")
 			return False
 			
 
