@@ -1,3 +1,8 @@
-from unittests.CheckWinLogic_Unittest import CheckWinLogic
+import unittest
+#import the actual unit test
+import CheckWinLogic_Unittest
 
-#Kinda Confused on how to get this to work
+print "\n###################\nChecking CheckWinLogic...\n###################\n"
+suite = unittest.TestLoader().loadTestsFromModule(CheckWinLogic_Unittest)
+unittest.TextTestRunner(verbosity=2).run(suite)
+
