@@ -3,12 +3,12 @@
 import unittest
 from checkWinLogic import WinLogic
 
+
+#Each def test a specific patern. Hardcoded, yes, but the failure output list per function so 
 class CheckWinLogic(unittest.TestCase):
-	#Check Collumns
 	def test_temp_hasPlayerWon_CollumnOne(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -19,7 +19,6 @@ class CheckWinLogic(unittest.TestCase):
 	def test_temp_hasPlayerWon_CollumnTwo(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -30,7 +29,6 @@ class CheckWinLogic(unittest.TestCase):
 	def test_temp_hasPlayerWon_CollumnThree(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -42,7 +40,6 @@ class CheckWinLogic(unittest.TestCase):
 	def test_temp_hasPlayerWon_RowOne(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -53,7 +50,6 @@ class CheckWinLogic(unittest.TestCase):
 	def test_temp_hasPlayerWon_RowTwo(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -64,7 +60,6 @@ class CheckWinLogic(unittest.TestCase):
 	def test_temp_hasPlayerWon_RowThree(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -74,7 +69,6 @@ class CheckWinLogic(unittest.TestCase):
 	def test_temp_hasPlayerWon_DiagOne(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -86,7 +80,6 @@ class CheckWinLogic(unittest.TestCase):
 	def test_temp_hasPlayerWon_DiagTwo(self): #no winner
 		#Make Class
 		win = WinLogic()
-		#Check Vertical
 		player = "Player1"
 		win.SetPlayer(player)
 		win.ClearMatrix()
@@ -95,7 +88,7 @@ class CheckWinLogic(unittest.TestCase):
 		win.SetGrid(player,2,0)
 		self.assertTrue(win.hasPlayerWon(player)) #win case 8
 
-unittest.main()
-#if __name__ == '__main__':
+#unittest.main()
+if __name__ == '__main__':
 	#hasPayerWon()
-    #unittest.main()
+    unittest.main()
