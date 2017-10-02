@@ -25,7 +25,7 @@ class WinLogic:
 			print "Setting grid..."
 		WinLogic.matrix[w][h] = val
 		
-	def GetGrid(w, h):
+	def GetGrid(self, w, h):
 		return WinLogic.matrix[w] [h]
 		
 	def hasPlayerWon(self, player):
