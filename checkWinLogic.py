@@ -29,13 +29,25 @@ class WinLogic:
 		return WinLogic.matrix[w] [h]
 		
 	def hasPlayerWon(self, player):
-		return False
 		if WinLogic.debug:
 			print "Checking for winner"
-		if(WinLogic.matrix[0] [0] == MyClass.player):
-			if WinLogic.debug:
-				print WinLogic.player + " has won"
+		if((WinLogic.matrix[0] [0] == WinLogic.player)and(WinLogic.matrix[1] [0] == WinLogic.player)and(WinLogic.matrix[2] [0] == WinLogic.player)):
 			return True
+		elif((WinLogic.matrix[0] [1] == WinLogic.player)and(WinLogic.matrix[1] [1] == WinLogic.player)and(WinLogic.matrix[2] [1] == WinLogic.player)):
+			return True
+		elif((WinLogic.matrix[0] [2] == WinLogic.player)and(WinLogic.matrix[1] [2] == WinLogic.player)and(WinLogic.matrix[2] [2] == WinLogic.player)):
+			return True
+		if((WinLogic.matrix[0] [0] == WinLogic.player)and(WinLogic.matrix[0] [1] == WinLogic.player)and(WinLogic.matrix[0] [2] == WinLogic.player)):
+			return True
+		if((WinLogic.matrix[1] [0] == WinLogic.player)and(WinLogic.matrix[1] [1] == WinLogic.player)and(WinLogic.matrix[1] [2] == WinLogic.player)):
+			return True
+		if((WinLogic.matrix[2] [0] == WinLogic.player)and(WinLogic.matrix[2] [1] == WinLogic.player)and(WinLogic.matrix[2] [2] == WinLogic.player)):
+			return True
+		if((WinLogic.matrix[0] [0] == WinLogic.player)and(WinLogic.matrix[1] [1] == WinLogic.player)and(WinLogic.matrix[2] [2] == WinLogic.player)):
+			return True
+		if((WinLogic.matrix[2] [0] == WinLogic.player)and(WinLogic.matrix[1] [1] == WinLogic.player)and(WinLogic.matrix[0] [2] == WinLogic.player)):
+			return True
+		
 		else:
 			if WinLogic.debug:
 				print "No Player has won"
