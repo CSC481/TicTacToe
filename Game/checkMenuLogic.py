@@ -3,8 +3,11 @@ class MenuLogic:
     player2 = ""
 
     def __init__(self):
-        return
+        self.player1 = ""
+        self.player2 = ""
 
     def setPlayerName(self, playerNumber, playerName):
         return
 
+    def launchGame(self, playerName1, playerName2):
+        return
