@@ -18,7 +18,11 @@ class CheckMenuLogic(unittest.TestCase):
         self.assertEqual(menu.player2, "John Doe")
 
     def test_launchGame(self):
-        return
+        menu = MenuLogic()
+        menu.launchGame(" ", "John Doe")
+
+        self.assertEqual(menu.player1, "Player 1")
+        self.assertEqual(menu.player2, "John Doe")
 
 #unittest.main()
 if __name__ == '__main__':
