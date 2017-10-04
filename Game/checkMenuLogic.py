@@ -19,4 +19,5 @@ class MenuLogic:
                 self.player2 = playerName
 
     def launchGame(self, playerName1, playerName2):
-        return
+        self.setPlayerName(1, playerName1)
+        self.setPlayerName(2, playerName2)
