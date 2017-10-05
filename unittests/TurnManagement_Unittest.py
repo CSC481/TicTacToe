@@ -34,6 +34,11 @@ class TestTurnManagement(unittest.TestCase):
 		p3 = tm.GetCurrentPlayer()
 		self.assertTrue(p1!=p2)
 		self.assertTrue(p1==p3)
+		
+	def test_WinnerFound(self):
+		tm = TurnManagement()
+		self.assertTrue(tm.WinnerFound(1))
+		self.assertFalse(tm.WinnerFound(0))
 
 #unittest.main()
 if __name__ == '__main__':
