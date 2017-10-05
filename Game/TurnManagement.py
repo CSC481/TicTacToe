@@ -24,8 +24,14 @@ class TurnManagement():
 			TurnManagement.firstTurnPlayer = TurnManagement.playerTwo
 		elif(TurnManagement.firstTurnPlayer == TurnManagement.playerTwo):
 			TurnManagement.currentPlayer = TurnManagement.playerOne
-			TurnManagement.firstTurnPlayer = TurnManagement.playerOne
+			TurnManagement.firstTurnPlayer = TurnManagement.playerTwo
 		#TurnManagement.currentPlayer = TurnManagement.firstTurnPlayer
+		
+	def WinnerFound(self, hasWon):
+		if(hasWon==1):
+			return True
+		else:
+			return False
 
 if debug:
 	tm = TurnManagement()
@@ -36,3 +42,4 @@ if debug:
 	print(tm.GetCurrentPlayer())
 	tm.NewGame()
 	print(tm.GetCurrentPlayer())
+	print(tm.WinnerFound(1))
