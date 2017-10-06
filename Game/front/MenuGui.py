@@ -57,7 +57,11 @@ fen.title("test")
 can = Canvas(fen,bg= "white" ,height=700, width=1000)
 can.pack()
 
-menu = MenuGui("images/Menu_GUI.png", "images/PlayButton.png")
+#tkinter 8.5 only supports gifs, while 8.6 supports png, I modified it 
+#to add better cross platform funtionality - Ben
+#menu = MenuGui("images/Menu_GUI.png", "images/PlayButton.png")
+menu = MenuGui("images/Menu_GUI.gif", "images/PlayButton.gif")
+
 menu.display(can)
 
 fen.mainloop()
